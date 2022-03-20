@@ -9,6 +9,7 @@ const awayNumber = document.querySelector('.away-number');
 const awayTeamName = document.querySelector('.awayNameTeam');
 
 
+// CODE TAMBAH SKOR
 clickHome.addEventListener('click', () => {
     countHome += 1;
     homeNumber.innerText = countHome;
@@ -22,6 +23,7 @@ clickAway.addEventListener('click', () => {
     console.log(awayNumber);
 })
 
+// CODE INPUT NAMA TIM
 const formHome = document.querySelector('form[name=form-home]');
 formHome.addEventListener('submit', (event) => {
     const home = document.querySelector('.homeTimInput').value;
@@ -73,7 +75,7 @@ function matchTime(hours, minutes) {
 }
 
 
-// CODE MENHINPUT WAKTU
+// CODE MENGINPUT WAKTU
 const formTimeMatch = document.querySelector('form[name=timer]');
 formTimeMatch.addEventListener('submit', (event) => {
     event.preventDefault();
